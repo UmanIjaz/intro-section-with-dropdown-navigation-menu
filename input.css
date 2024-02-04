@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* for nav link dropdowns */
+/* 1 */
+#features:hover #dropdown-features{
+    display: block;
+}
+
+#dropdown-features{
+    display: none;
+}
+/* 2 */
+#company:hover #dropdown-company{
+    display: block;
+}
+
+#dropdown-company{
+    display: none;
+}
+

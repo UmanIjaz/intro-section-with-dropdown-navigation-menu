@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Intro Section</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1 class="text-green-500 bg-red-500">good morning </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro Section</title>
+    <!-- Css file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-c_white">
+    <!-- NavBar -->
+    <nav class="p-6">
+      <!-- Flex Container -->
+      <div class="flex container space-x-20">
+        <div class="" id="logo">
+          <img src="/images/logo.svg" alt="snap-logo" />
+        </div>
+        <!-- Nav Links -->
+        <ul class="flex space-x-12 font-epilogue font-normal">
+          <li
+            class="relative text-c_gray hover:text-black"
+            id="features"
+          >
+          <span class="flex items-center gap-1 cursor-pointer">
+            Features <img class="" src="images/icon-arrow-down.svg" alt="" />
+          </span>
+          <!-- Gap -->
+          <div class="h-3"></div>
+          <!-- Dropdown Menu -->
+            <ul
+              id="dropdown-features"
+              class="absolute bg-white text-c_gray shadow-xl p-6 px-8 space-y-2 rounded-xl "
+            >
+              <li class="hover:text-c_black"><a href="#">Todo List</a></li>
+              <li class="hover:text-c_black"><a href="#">Calender</a></li>
+              <li class="hover:text-c_black"><a href="#">Reminders</a></li>
+              <li class="hover:text-c_black"><a href="#">Planning</a></li>
+            </ul>
+          </li>
+          <!-- 2nd list-item -->
+          <li
+          class="relative text-c_gray hover:text-black"
+          id="company"
+        >
+        <span class="flex items-center gap-1 cursor-pointer">
+          Company <img class="" src="images/icon-arrow-down.svg" alt="" />
+        </span>
+        <!-- Gap -->
+        <div class="h-3"></div>
+        <!-- Dropdown Menu -->
+          <ul
+            id="dropdown-company"
+            class="absolute bg-white text-c_gray shadow-xl p-6 px-8 space-y-2 rounded-xl "
+          >
+            <li class="hover:text-c_black"><a href="#">History</a></li>
+            <li class="hover:text-c_black"><a href="#">Team</a></li>
+            <li class="hover:text-c_black"><a href="#">Blog</a></li>
+          </ul>
+        </li>
+          <li class=" text-c_gray hover:text-black"><a href="#">Careers</a></li>
+          <li class=" text-c_gray hover:text-black"><a href="#">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </body>
 </html>
