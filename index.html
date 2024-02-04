@@ -16,27 +16,29 @@
   </head>
   <body class="bg-c_white">
     <!-- NavBar -->
-    <nav class="p-6">
+    <nav class="p-6 px-16 flex justify-center">
       <!-- Flex Container -->
-      <div class="flex container space-x-20">
+      <div class="flex container space-x-20 items-center justify-between">
+        <!-- logo & links Wrapper -->
+        <div class="flex space-x-16">
+        <!-- Logo -->
         <div class="" id="logo">
           <img src="/images/logo.svg" alt="snap-logo" />
         </div>
-        <!-- Nav Links -->
+
+        <!-- Nav Links -->     
         <ul class="flex space-x-12 font-epilogue font-normal">
-          <li
-            class="relative text-c_gray hover:text-black"
-            id="features"
-          >
-          <span class="flex items-center gap-1 cursor-pointer">
-            Features <img class="" src="images/icon-arrow-down.svg" alt="" />
-          </span>
-          <!-- Gap -->
-          <div class="h-3"></div>
-          <!-- Dropdown Menu -->
+          <!-- 1st list-item -->
+          <li class="relative text-c_gray hover:text-black" id="features">
+            <span class="flex items-center gap-1 cursor-pointer">
+              Features <img class="" src="images/icon-arrow-down.svg" alt="" />
+            </span>
+            <!-- Gap -->
+            <!-- <div class="h-3"></div> -->
+            <!-- Dropdown Menu -->
             <ul
               id="dropdown-features"
-              class="absolute bg-white text-c_gray shadow-xl p-6 px-8 space-y-2 rounded-xl "
+              class="absolute bg-white text-c_gray shadow-xl p-6 px-8 space-y-2 rounded-xl"
             >
               <li class="hover:text-c_black"><a href="#">Todo List</a></li>
               <li class="hover:text-c_black"><a href="#">Calender</a></li>
@@ -45,28 +47,34 @@
             </ul>
           </li>
           <!-- 2nd list-item -->
-          <li
-          class="relative text-c_gray hover:text-black"
-          id="company"
-        >
-        <span class="flex items-center gap-1 cursor-pointer">
-          Company <img class="" src="images/icon-arrow-down.svg" alt="" />
-        </span>
-        <!-- Gap -->
-        <div class="h-3"></div>
-        <!-- Dropdown Menu -->
-          <ul
-            id="dropdown-company"
-            class="absolute bg-white text-c_gray shadow-xl p-6 px-8 space-y-2 rounded-xl "
-          >
-            <li class="hover:text-c_black"><a href="#">History</a></li>
-            <li class="hover:text-c_black"><a href="#">Team</a></li>
-            <li class="hover:text-c_black"><a href="#">Blog</a></li>
-          </ul>
-        </li>
-          <li class=" text-c_gray hover:text-black"><a href="#">Careers</a></li>
-          <li class=" text-c_gray hover:text-black"><a href="#">About</a></li>
+          <li class="relative text-c_gray hover:text-black" id="company">
+            <span class="flex items-center gap-1 cursor-pointer">
+              Company <img class="" src="images/icon-arrow-down.svg" alt="" />
+            </span>
+            <!-- Gap -->
+            <!-- <div class="h-3 absolute bg-orange-400"></div> -->
+            <!-- Dropdown Menu -->
+            <ul
+              id="dropdown-company"
+              class="absolute bg-white text-c_gray shadow-xl p-6 px-8 space-y-2 rounded-xl"
+            >
+              <li class="hover:text-c_black"><a href="#">History</a></li>
+              <li class="hover:text-c_black"><a href="#">Team</a></li>
+              <li class="hover:text-c_black"><a href="#">Blog</a></li>
+            </ul>
+          </li>
+          <!-- 3rd list-item -->
+          <li class="text-c_gray hover:text-black"><a href="#">Careers</a></li>
+          <!-- 4th list-item -->
+          <li class="text-c_gray hover:text-black"><a href="#">About</a></li>
         </ul>
+      </div>
+
+         <!-- login Buttons -->
+      <div class="flex space-x-6">
+        <button class="text-c_gray hover:text-c_black">Login</button>
+        <button class="p-2 px-4 border-2 border-c_gray hover:border-c_black border-solid text-c_gray hover:text-c_black rounded-xl bg-c_white">Register</button>
+      </div>
       </div>
     </nav>
   </body>
